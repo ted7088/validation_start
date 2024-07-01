@@ -13,10 +13,10 @@ public class Item {
     private Long id;
 
     @NotBlank
-    private String itemName;
+    private String itemName; //A
     @NotNull
     @Range(min = 1000, max = 1000000)
-    private Integer price;
+    private Integer price; //A , typeMismatch
     @NotNull
     @Max(9999)
     private Integer quantity;
