@@ -85,6 +85,7 @@ public class ValidationItemControllerV4 {
         itemParam.setItemName(form.getItemName());
         itemParam.setPrice(form.getPrice());
         itemParam.setQuantity(form.getQuantity());
+
         itemRepository.update(itemId, itemParam);
         return "redirect:/validation/v4/items/{itemId}";
     }
